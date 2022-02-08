@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --drk: #272a31;
+  --rd: #ec5242;
+  --lght: #d3d3d3;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* top nav */
+.nav-top, 
+.logo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.2rem 10%;
+    background-color: var(--drk);
+  }
+
+  .nav-menu-top {
+    display: flex;
+    gap: 1rem;
+    color: white;
+  }
+
+  .nav-link-top {
+    color: white;
+  }
+}
+
+/* ----------- Navbar Start --------------- */
+
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 5%;
+}
+
+.hamburger {
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px auto;
+  background-color: var(--drk);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -120%;
+  top: 0;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  z-index: 2;
+  opacity: 10;
+}
+
+
+/* --- active class --- */
+@media screen and (max-width: 768px) {
+  .nav-menu.active {
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    gap: 1rem;
+    background-color: var(--rd);
+  }
+
+  .bars.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 0 3vw;
+    z-index: 1;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: white;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: white;
+  }
+
+  .hamburger.active {
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 1rem 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    margin: 0;
+
+  }
+
+  .logo {
+    display: grid;
+    align-content: center;
+  }
+
+  .nav-menu {
+    position: static;
+    left: 0;
+    top: 0;
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    text-align: center;
+  }
+
+
+  .nav-item {
+    display: grid;
+    align-content: center;
+  
+  }
+  
+  .nav-item a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Last menu element */
+  .nav-item:last-child {
+    border: solid var(--rd);
+  }
+}
+/* ----------- Navbar end --------------- */
+
+
+
+/* ----------- main --------------- */
+#hero {
+  padding: 10rem 5%;
+  color: var(--drk);
+  background-image: url("../images/bg2.png");
+  background-image: url("../images/shapes.png") ;
+
+}
+
+#hero h1,
+#hero h2 {
+  color: var(--rd);
+}
+
+#hero h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+#hero h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#hero div {
+  border: solid white 3px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background-color: rgba(150,150,150,0.1);
+}
+
+#hero div p {
+  color: var(--drk);
+}
+
+#hero h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  #hero {
+  padding: 10rem 10%;
+  }
+
+  #hero div {
+    width: 70%;
+  }
+
+}
+
+/* --- Program --- */
+
+#program {
+  background-color: var(--drk);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%2321242d' fill-opacity='1' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+
+}
+
+/* "Main Program" header */
+#program h1 {
+  position: relative;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;  
+  color: var(--lght);
+  z-index : 1;
+
+}
+
+#program h1:before {
+  content : "";
+  position: absolute;
+  bottom  : 0;
+  inset-inline-start: 50%;
+  margin-inline-start: -1.5rem;
+  height  : 1px;
+  width   : 3rem;  /* or 100px */
+  border-bottom:2px solid var(--rd);
+  text-align: center;  
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  color: var(--lght);
+}
+
+.card ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(230,230,230,0.3);
+}
+
+.card ul li {
+  display: grid;
+  align-content: center;
+}
+
+.card h4 {
+  color: var(--rd);
+}
+
+@media screen and (min-width: 768px) {
+  .card-list {
+    flex-direction: row;
+  }
+
+  .card ul {
+    flex-direction: column;
+  }
+}
+
+
+#program .btn-join {
+  display: flex;
+  padding: 1.5rem 3rem;
+  background-color: var(--rd);
+  color: white;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: max-content;
+}
