@@ -1,0 +1,40 @@
+# LINTERS
+
+  ## weblint
+  Run: npx hint .
+
+
+  ## Stylelint
+
+  Auto error fix run: 
+    npx stylelint "**/*.{css,scss}" --fix
+
+
+  ## EsLint
+
+  Auto error fix run: 
+    npx eslint . --fix
+____________________________________________________
+
+# GIT COMMANDS
+
+  ## Merge branchB into branchA. 
+
+    * first checkout branchA like below,
+      Run: git checkout branchA
+
+    * Then execute the below command to merge branchB into branchA:
+      Run: git merge branchB
+
+  ## Delete branch
+    // delete branch LOCALLY
+      git branch -d localBranchName
+
+    // delete branch REMOTELY
+      git push origin --delete remoteBranchName
+
+  ##
+    
+
+
+

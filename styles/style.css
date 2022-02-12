@@ -20,7 +20,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
-
 }
 
 /* top nav */
@@ -41,6 +40,7 @@ header {
     display: flex;
     gap: 1rem;
     color: var(--lght);
+    font-weight: bold;
   }
 
   .nav-link-top {
@@ -121,12 +121,12 @@ li {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
     background-color: white;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
     background-color: white;
   }
 
@@ -144,15 +144,23 @@ li {
   }
 
   .logo {
-    display: grid;
+    display: flex;
+    gap: 0.5rem;
     align-content: center;
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--drk);
+  }
+
+  .logo span {
+    color: var(--rd);
   }
 
   .nav-menu {
     position: static;
     left: 0;
     top: 0;
-    gap: 5rem;
+    gap: 3rem;
     display: flex;
     flex-direction: row;
     width: auto;
@@ -160,6 +168,7 @@ li {
   }
 
   .nav-item {
+    display: -ms-grid;
     display: grid;
     align-content: center;
   }
@@ -178,6 +187,11 @@ li {
   /* Last menu element */
   .nav-item:last-child {
     border: solid var(--rd);
+    padding: 0.5rem;
+  }
+
+  .nav-item:last-child a {
+    color: var(--rd);
   }
 }
 
@@ -198,6 +212,11 @@ li {
   color: var(--rd);
 }
 
+#hero h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
 #hero h1 {
   font-weight: 900;
   font-size: 2.5rem;
@@ -208,19 +227,11 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
-#hero h2 {
-  font-weight: 300;
-  font-size: 2rem;
-}
-
 #hero div {
   border: solid white 3px;
   margin: 0.5rem 0;
   padding: 1rem;
   background-color: rgba(150, 150, 150, 0.1);
-}
-
-#hero div p {
   color: var(--drk);
 }
 
@@ -282,6 +293,7 @@ li {
 .program-card ul {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 1rem;
   padding: 1rem;
   margin: 0.2rem;
@@ -289,6 +301,7 @@ li {
 }
 
 .program-card ul li {
+  display: -ms-grid;
   display: grid;
   align-content: center;
   text-align: center;
@@ -329,6 +342,7 @@ li {
 }
 
 /* ------- Contributer section ------- */
+
 /* "Main Program" header */
 #contributor h2 {
   position: relative;
@@ -356,13 +370,12 @@ li {
 
 .contributor-card {
   display: flex;
-  padding:  1rem;
+  padding: 1rem;
 }
 
 .contributor-img {
   position: relative;
   padding: 0.5rem 0.5rem;
-
 }
 
 .contributor-img::before {
@@ -392,7 +405,6 @@ li {
   color: var(--rd);
   font-size: 0.8rem;
   padding-bottom: 0.5rem;
-
 }
 
 .card-container p:nth-child(2)::after {
@@ -412,6 +424,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .contributor-list {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem 10%;
@@ -429,7 +442,8 @@ li {
   font-size: 1.5rem;
 }
 
-#more-btn  > * {
+#more-btn > * {
+  display: -ms-grid;
   display: grid;
   align-content: center;
 }
@@ -450,7 +464,6 @@ i.fas.fa-angle-down::before {
   .mobile-hide {
     display: flex;
   }
-
 }
 
 #partner,
@@ -498,19 +511,19 @@ footer {
     height: 5rem;
   }
 
-  /* footer */ 
+  /* footer */
   footer {
     display: block;
     padding: 3rem 2rem;
   }
-  
+
   footer .wrapper.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
   }
-  
+
   footer .branding {
     color: var(--primary);
     font-family: var(--sans-font);
