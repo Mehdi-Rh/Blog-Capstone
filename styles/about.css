@@ -201,7 +201,7 @@ li {
 #hero {
   padding: 10rem 5% 2rem;
   color: var(--drk);
-  background-image: url("../images/bg/bg8.png");
+  background-image: url("../images/bg/bg7.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -233,7 +233,7 @@ li {
   border: solid white 3px;
   margin: 2rem;
   padding: 1.5rem;
-  background-color: rgba(150, 150, 150, 0.1);
+  background-color: rgb(252, 252, 252);
 }
 
 #hero div p {
@@ -241,6 +241,11 @@ li {
   color: var(--drk);
 }
 
+@media screen and (min-width: 768px) {
+  #hero h2 {
+    display: none;
+ }
+}
 /* about section */
 #about-ac {
   background-color: #fff;

@@ -201,7 +201,7 @@ li {
 #hero {
   padding: 10rem 5%;
   color: var(--drk);
-  background-image: url("../images/bg/bg8.png");
+  background-image: url("../images/bg/bg7.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -231,7 +231,7 @@ li {
   border: solid white 3px;
   margin: 0.5rem 0;
   padding: 1rem;
-  background-color: rgba(150, 150, 150, 0.1);
+  background-color: rgb(252, 252, 252);
   color: var(--drk);
 }
 
