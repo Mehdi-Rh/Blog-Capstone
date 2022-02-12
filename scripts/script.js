@@ -21,37 +21,37 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 const contributers = [
 
   {
-    photoUrl: '../images/photo/profile1.png',
+    photoUrl: './images/photo/profile1.png',
     fullName: 'Belgacem Haba',
     title: 'Senior Fellow and Vice President, Xperi Corporation',
     description: 'Dr. Haba joined Xperi (previously Tessera) in 1996 and is now its Senior Technical Fellow and vice president. Today he is heading the path finding team in the electronic R&D division.',
   },
   {
-    photoUrl: '../images/photo/profile2.png',
+    photoUrl: './images/photo/profile2.png',
     fullName: 'Steve Jobs',
     title: 'Chairman, chief executive officer (CEO), and co-founder of Apple Inc',
     description: "Jobs and  Steve Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together the duo gained fame and wealth a year later with the Apple II, one of the first highly successful mass-produced microcomputers.",
   },
   {
-    photoUrl: '../images/photo/profile3.png',
+    photoUrl: './images/photo/profile3.png',
     fullName: 'full name3',
     title: 'American business magnate, software developer, investor, author, and philanthropist',
     description: 'He is a co-founder of Microsoft, along with his late childhood friend Paul Allen.',
   },
   {
-    photoUrl: '../images/photo/profile4.png',
+    photoUrl: './images/photo/profile4.png',
     fullName: 'Ryan Merkley',
     title: 'Ceo o Crative Commens, ex COO of the Mozilla Foudation',
     description: 'Ryan has been leading open source projacts at the Mozilla foundation such as the open source movement',
   },
   {
-    photoUrl: '../images/photo/profile5.png',
+    photoUrl: './images/photo/profile5.png',
     fullName: 'Yohai Benkler',
     title: 'Berkman professor of Entrepreunarial Legal Studies at Harvard Law School',
     description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006',
   },
   {
-    photoUrl: '../images/photo/profile6.png',
+    photoUrl: './images/photo/profile6.png',
     fullName: 'Kilnam Chon',
     title: '',
     description: 'Kham Chan helped bring the internet to Asia and is an outspoken advocate for the open web and digital commans.',
