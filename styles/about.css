@@ -244,8 +244,9 @@ li {
 @media screen and (min-width: 768px) {
   #hero h2 {
     display: none;
- }
+  }
 }
+
 /* about section */
 #about-ac {
   background-color: #fff;
