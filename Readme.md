@@ -2,11 +2,10 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+This project is a conference responsive website build to showcase the activities of an event, buils with HTML&CSS and Javascript.
 
 ![screenshot](./capstone-desk.png)
 
-"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.
 ## Built With
 
 - HTML, CSS, Javascript
