@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Algerian Coders
 
 This project is a conference responsive website build to showcase the activities of an event, buils with HTML&CSS and Javascript.
 
